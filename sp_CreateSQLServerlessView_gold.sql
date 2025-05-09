@@ -1,4 +1,4 @@
-USE gold_db
+USE Unitrans_db
 GO
 
 CREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName nvarchar(100)
@@ -10,7 +10,7 @@ BEGIN
             *
         FROM
             OPENROWSET(
-                BULK ''https://sadataengineeringproj.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',
+                BULK ''https://unitrans.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',
                 FORMAT = ''DELTA''
             ) AS [result]'
 
