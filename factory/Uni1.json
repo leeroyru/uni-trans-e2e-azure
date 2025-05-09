@@ -1,0 +1,9 @@
+{
+	"name": "Uni1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a0852392-1b95-4f5c-a7e5-d10f0eb847b2",
+		"tenantId": "725133fc-51c4-4bb8-991e-47e8bdf3b029"
+	}
+}

@@ -1,0 +1,134 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MakeFlag",
+				"type": "bit"
+			},
+			{
+				"name": "FinishedGoodsFlag",
+				"type": "bit"
+			},
+			{
+				"name": "Color",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SafetyStockLevel",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "ReorderPoint",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "StandardCost",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ListPrice",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Size",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SizeUnitMeasureCode",
+				"type": "nchar"
+			},
+			{
+				"name": "WeightUnitMeasureCode",
+				"type": "nchar"
+			},
+			{
+				"name": "Weight",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 2
+			},
+			{
+				"name": "DaysToManufacture",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductLine",
+				"type": "nchar"
+			},
+			{
+				"name": "Class",
+				"type": "nchar"
+			},
+			{
+				"name": "Style",
+				"type": "nchar"
+			},
+			{
+				"name": "ProductSubcategoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductModelID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SellStartDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SellEndDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DiscontinuedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "rowguid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

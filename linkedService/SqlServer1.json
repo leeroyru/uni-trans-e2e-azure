@@ -1,0 +1,28 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-O40K96I\\SQLEXPRESS",
+			"database": "AdventureWorksLT2017",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "leeroy",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

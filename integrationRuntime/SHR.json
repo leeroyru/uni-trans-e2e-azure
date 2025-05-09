@@ -1,0 +1,9 @@
+{
+	"name": "SHR",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": false
+		}
+	}
+}
